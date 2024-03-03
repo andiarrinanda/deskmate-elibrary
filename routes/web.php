@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\Laporan;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,15 @@ Route::get('/home', function () {
     return view('store');
 })->middleware(['auth', 'verified'])->name('store');
 
+Route::get('/report',[laporan::class,'index']);
+
+Route::get('/bookinfo', function () {
+    return view('bookinfo');
+});
+
+Route::get('/invoice', function () {
+    return view('invoice');
+});
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

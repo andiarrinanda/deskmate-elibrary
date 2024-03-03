@@ -37,3 +37,21 @@ function get_price_value($id){
     }
 }
 
+function get_isbn_value($id){
+    $data = BookSection::where('id',$id)->first();
+    if(isset($data->isbn)){
+        return $data->isbn;
+    }else{
+        return 'empty';
+    }
+}
+
+function get_synopsis_value($id){
+    $data = BookSection::where('id',$id)->first();
+    if(isset($data->synopsis)){
+        return $data->synopsis;
+    }else{
+        return 'empty';
+    }
+}
+

@@ -13,5 +13,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('book-sections', BookSectionController::class);
+    $router->resource('reports', ReportController::class);
 
 });

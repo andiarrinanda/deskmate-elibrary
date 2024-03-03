@@ -130,9 +130,16 @@
                     onclick="event.preventDefault();
                                 this.closest('form').submit();">
             <div class="button">
-                {{ __('LogOut') }}
+                {{ __('Log Out') }}
             </div>
             </x-dropdown-link>
+
+            <x-dropdown-link :href="route('profile.edit')">
+               <div class="button">
+               {{ __('Profile') }}
+            </div>
+           </x-dropdown-link>
+
         </form>
       
 
@@ -170,7 +177,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -188,7 +195,7 @@
                            <span class="featured__discount">IDR. {{$price2}}</span>
                            <span class="featured__price"></span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1eifzblyiAJ-volCZ72fLddBEarbDDXuZ/view?usp=sharing" class="button">Read</a>
+                        <a href="https://drive.google.com/file/d/1eifzblyiAJ-volCZ72fLddBEarbDDXuZ/view?usp=sharing" class="button">Buy Now</a>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -206,7 +213,7 @@
                            <span class="featured__discount">IDR. {{$price3}}</span>
                            <span class="featured__price"></span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1ahrhwa-FbNPtFUReEWtz4AmaUK61qPln/view?usp=sharing" class="button">Read</a>
+                        <a href="https://drive.google.com/file/d/1ahrhwa-FbNPtFUReEWtz4AmaUK61qPln/view?usp=sharing" class="button">Buy Now</a>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -224,7 +231,7 @@
                            <span class="featured__discount">IDR. {{$price12}}</span>
                            <span class="featured__price"></span>
                         </div>
-                        <a href="https://drive.google.com/file/d/1oYz76ybebY4incpEvclx_hfTEqDQR7Gt/view?usp=sharing" class="button">Read</a>
+                        <a href="https://drive.google.com/file/d/1oYz76ybebY4incpEvclx_hfTEqDQR7Gt/view?usp=sharing" class="button">Buy Now</a>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -243,7 +250,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                       <a href="https://drive.google.com/file/d/1oYz76ybebY4incpEvclx_hfTEqDQR7Gt/view?usp=sharing" class="button">Read</a>
+                       <a href="bookinfo" class="button">Buy Now</a>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -262,7 +269,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -281,7 +288,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -300,7 +307,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -319,7 +326,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -338,7 +345,7 @@
                            <span class="featured__price"></span>
                         </div>
 
-                        <button class="button">Read</button>
+                        <button class="button">Buy Now</button>
 
                         <div class="featured__actions">
                            <button><i class="ri-search-line"></i></button>
@@ -575,7 +582,7 @@
                               <span class="featured__price"></span>
                            </div>
    
-                           <button class="button">Read</button>
+                           <button class="button">Buy Now</button>
    
                            <div class="featured__actions">
                               <button><i class="ri-search-line"></i></button>
@@ -594,7 +601,7 @@
                               <span class="featured__price"></span>
                            </div>
    
-                           <button class="button">Read</button>
+                           <button class="button">Buy Now</button>
    
                            <div class="featured__actions">
                               <button><i class="ri-search-line"></i></button>
@@ -613,7 +620,7 @@
                               <span class="featured__price"></span>
                            </div>
    
-                           <button class="button">Read</button>
+                           <button class="button">Buy Now</button>
    
                            <div class="featured__actions">
                               <button><i class="ri-search-line"></i></button>
@@ -632,7 +639,7 @@
                               <span class="featured__price"></span>
                            </div>
    
-                           <button class="button">Read</button>
+                           <button class="button">Buy Now</button>
    
                            <div class="featured__actions">
                               <button><i class="ri-search-line"></i></button>
