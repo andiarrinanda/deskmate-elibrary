@@ -80,10 +80,9 @@
 
       <!--==================== SEARCH ====================-->
       <div class="search" id="search-content">
-         <form action="/pegawai/cari" class="search__form" method="GET">
+         <form action="" class="search__form">
             <i class="ri-search-line search__icon"></i>
-            <input type="text" placeholder="What are you looking for?" class="search__input" value="{{ old('cari') }}">
-            <input type="submit" value="CARI" hidden>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
          </form>
 
          <i class="ri-close-line search__close" id="search-close"></i>

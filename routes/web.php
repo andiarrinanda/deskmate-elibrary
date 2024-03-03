@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\Laporan;
@@ -30,6 +31,8 @@ Route::get('/bookinfo', function () {
     return view('bookinfo');
 });
 
+Route::get('/book/cari', [BookController::class, 'search']);
+
 Route::get('/invoice', function () {
     return view('invoice');
 });
@@ -38,5 +41,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 require __DIR__.'/auth.php';
